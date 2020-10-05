@@ -2,6 +2,11 @@
 
 You can use the provided script `helper-scripts/backup_and_restore.sh` to backup mailcow automatically.
 
+Newer version of the script are supposed to force execution in /opt/mailcow-dockerized - but it is safer to cd to 
+/opt/mailcow-dockerized and then run the script. 
+
+THE SCRIPT WILL *NOT* RESTORE PROPERLY UNLESS YOU ARE IN /opt/mailcow-dockerized on those earlier version.
+
 Please do not copy this script to another location.
 
 To run a backup, write "backup" as first parameter and either one or more components to backup as following parameters.
